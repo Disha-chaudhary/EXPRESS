@@ -47,6 +47,9 @@ app.get("/about", (req, res) => {
     res.send(path.join(__dirname, "Components", about.html));
 });
 
+app.get("/signup",(req,res)=>{
+    res.send(path,join(__dirname,"Components", signup.html));
+})
 app.listen(5200, () => {
     console.log('Server is running on port 5200');
 });
